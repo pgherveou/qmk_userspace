@@ -17,6 +17,7 @@
 #pragma once
 #define TAPPING_TERM_PER_KEY
 #define RETRO_TAPPING_PER_KEY
+// #define PERMISSIVE_HOLD_PER_KEY
 
 #undef DEBOUNCE
 #define DEBOUNCE 20
