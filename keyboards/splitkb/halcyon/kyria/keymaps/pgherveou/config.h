@@ -17,9 +17,13 @@
 #pragma once
 #define TAPPING_TERM_PER_KEY
 #define RETRO_TAPPING_PER_KEY
-// #define PERMISSIVE_HOLD_PER_KEY
+#define PERMISSIVE_HOLD_PER_KEY
 
 #undef DEBOUNCE
 #define DEBOUNCE 20
 // see https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
 #define DEBOUNCE_TYPE sym_eager_pr
+
+// Disable RGB LEDs
+#define RGB_MATRIX_DEFAULT_VAL 0
+#define RGB_MATRIX_DISABLE_KEYCODES
