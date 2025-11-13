@@ -1,3 +1,6 @@
+# This adds module functionality to your keyboard (files found in users/halcyon_modules)
+USER_NAME := halcyon_modules
+
 OLED_ENABLE = no
 TAP_DANCE_ENABLE = no
 COMBO_ENABLE = yes
