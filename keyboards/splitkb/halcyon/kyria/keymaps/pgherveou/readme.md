@@ -1,9 +1,10 @@
-# Halcyon Elora's Default Keymap
+# Kyria's Default Keymap
+
+![KLE render of the default Kyria keymap with QWERTY as the base layer. Layers are shown in sublegends.](https://i.ibb.co/RQZx2dY/default-kyria2.jpg)
+
 
 The default keymap contains 5 layers which allows it to include all keys found on an ANSI layout TKL keyboard plus media keys.
-Hardware features of the Elora such as rotary encoders and underglow are also supported.
-
-The Elora keymap is in essence identical to the Kyria keymap, just with an additional number row. A deep dive into the keymap is provided there.
+This keymap is configured for the Halcyon Kyria Rev4.
 
 The five different layers are the following:
 1. Base layer (QWERTY, Colemak-DH or Dvorak)
@@ -17,8 +18,6 @@ The five different layers are the following:
 Base Layer: -
 
 ,-------------------------------------------.                              ,-------------------------------------------.
-|  Esc   |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  Esc   |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |  Tab   |   -  |   -  |   -  |   -  |   -  |                              |   -  |   -  |   -  |   -  |   -  |  Bksp  |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |Ctrl/Esc|   -  |   -  |   -  |   -  |   -  |                              |   -  |   -  |   -  |   -  |   -  |Ctrl/ - |
@@ -37,8 +36,6 @@ For the rest of this write-up, the base layer will be assumed to be QWERTY and w
 Base Layer: QWERTY
 
 ,-------------------------------------------.                              ,-------------------------------------------.
-|  Esc   |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  Esc   |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |Ctrl/Esc|   A  |   S  |   D  |   F  |   G  |                              |   H  |   J  |   K  |   L  | ;  : |Ctrl/' "|
@@ -55,12 +52,10 @@ Aside from variations in the alpha cluster, the rest of the base keys remain the
 ![Step-by-step animation of the transformation of an ortholinear TKL to a Kyria](https://i.imgur.com/uVDCOek.gif)
 
 <details>
-After making transformations to the classic ANSI US QWERTY TKL 60% to arrive to the layout of the Elora, as illustrated in the animation above, the result looks like this:
+After making transformations to the classic ANSI US QWERTY TKL 60% to arrive to the layout of the Kyria, as illustrated in the animation above, the result looks like this:
 
 ```
 ,-------------------------------------------.                              ,-------------------------------------------.
-|  Esc   |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  Esc   |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 | Cap Lk |   A  |   S  |   D  |   F  |   G  |                              |   H  |   J  |   K  |   L  | ;  : | '  "   |
@@ -74,7 +69,7 @@ After making transformations to the classic ANSI US QWERTY TKL 60% to arrive to 
 
 First thing to notice is the presence of blank keys. To fill in the blank keys above the <kbd>Space</kbd> keys, we can take inspiration from other split keyboards featuring an extra inner index column on each half. A common mapping for those kind of keys are the bracket keys that got removed in the fourth step of the animated transformation. The thumb keys besides <kbd>Space</kbd>s is prime real estate for dedicated layer-switching keys. It doesn't matter on which side is assigned the sym-layer-switch key but it helps to keep the nav-layer-switch on the left in order to keep the arrow keys on the right side like on a classic keyboard, so we'll put nav on the left and sym on the right. We'll address the remaining blank thumb keys later.
 
-The base layer is starting to form but there remains some flaws. One glaring issue is the position of Control. Control is a very commonly used function but the key on which it sits right now is way too tucked in under the hand to be able to press it comfortably with either the thumb or the pinky from resting position. In fact, installing a rotary encoder there is a common move among Elora users and I guarantee you that activating Control by holding down a rotary encoder does not spark joy. Instead, let's employ a popular trick that involves remapping the current Caps Lock key, which is positioned at a comfortable position on the keyboard, to Control. 
+The base layer is starting to form but there remains some flaws. One glaring issue is the position of Control. Control is a very commonly used function but the key on which it sits right now is way too tucked in under the hand to be able to press it comfortably with either the thumb or the pinky from resting position. In fact, installing a rotary encoder there is a common move among Kyria users and I guarantee you that activating Control by holding down a rotary encoder does not spark joy. Instead, let's employ a popular trick that involves remapping the current Caps Lock key, which is positioned at a comfortable position on the keyboard, to Control. 
 
 We can go further though; a variant of this trick makes the Control key produce Escape when tapped. This is called a “modtap”. There is no use to tapping Control by itself without chording it with another key and there is no use to holding down the Esc key so why not combine the two into a single key?
 
@@ -82,8 +77,6 @@ All of this leaves us with three blank keys.
 
 ```
 ,-------------------------------------------.                              ,-------------------------------------------.
-|  Esc   |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  Esc   |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |Ctrl/Esc|   A  |   S  |   D  |   F  |   G  |                              |   H  |   J  |   K  |   L  | ;  : | '  "   |
@@ -99,8 +92,6 @@ These keys are not easily reachable while touch typing (that is, not reachable w
 
 ```
 ,-------------------------------------------.                              ,-------------------------------------------.
-|  Esc   |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  Esc   |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |Ctrl/Esc|   A  |   S  |   D  |   F  |   G  |                              |   H  |   J  |   K  |   L  | ;  : | '  "   |
@@ -114,13 +105,11 @@ These keys are not easily reachable while touch typing (that is, not reachable w
 
 The next glaring issue is the absence of an Enter key on the current base layer this far. Enter is a very frequently used key so it deserves to be placed at a good spot in the keymap. The best way to insert it in the keymap with minimal changes to the current layout is to use modtaps. A tempting solution is to turn the <kbd>RShift</kbd> key into a <kbd>RShift/Enter</kbd> modtap but that can result in chat messages sent too frustratingly early when you're not used to it. Using GUI is also sub-optimal because tapping the GUI modifier actually has a use as opposed to taps of the Control or the Shift key. Pressing and releasing the GUI key by itself opens the App menu in many desktop environments. The natural choice is thus <kbd>LAlt/Enter</kbd>. That way, Enter is 1u away from resting thumb position and is unlikely to get accidentally activated because Alt is very rarely used in the midst of prose.
 
-Finally, we're one Quality-Of-Life update away from the actual base layer. <kbd>Ctrl/' "</kbd> not only preserves symmetry in the keymap with <kbd>Ctrl/Esc</kbd> but also helps balance the load between your pinkies and invites you to use both hands instead of contortions. Perhaps more importantly, it also frees you from the necessity of picking up your hand, breaking touch typing position and pressing a pinky key with your ring finger in order to execute Ctrl+A or Ctrl+Z. That becomes even more important on a board with such an aggressive pinky columnar stagger like the Elora.
+Finally, we're one Quality-Of-Life update away from the actual base layer. <kbd>Ctrl/' "</kbd> not only preserves symmetry in the keymap with <kbd>Ctrl/Esc</kbd> but also helps balance the load between your pinkies and invites you to use both hands instead of contortions. Perhaps more importantly, it also frees you from the necessity of picking up your hand, breaking touch typing position and pressing a pinky key with your ring finger in order to execute Ctrl+A or Ctrl+Z. That becomes even more important on a board with such an aggressive pinky columnar stagger like the Kyria.
 
 
 ```
 ,-------------------------------------------.                              ,-------------------------------------------.
-|  Esc   |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  Esc   |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |Ctrl/Esc|   A  |   S  |   D  |   F  |   G  |                              |   H  |   J  |   K  |   L  | ;  : |Ctrl/' "|
@@ -140,8 +129,6 @@ Finally, we're one Quality-Of-Life update away from the actual base layer. <kbd>
 Nav Layer: Media, navigation
                                                                                                                          
 ,-------------------------------------------.                              ,-------------------------------------------.
-|        |      |      |      |      |      |                              |      |      |      |      |      |        |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |        |      |      |      |      |      |                              | PgUp | Home |   ↑  | End  | VolUp| Delete |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |        |  GUI |  Alt | Ctrl | Shift|      |                              | PgDn |  ←   |   ↓  |   →  | VolDn| Insert |
@@ -168,8 +155,6 @@ Useful mnemonics:
 Sym Layer: Numbers, symbols
                                                                                                                          
 ,-------------------------------------------.                              ,-------------------------------------------.
-|        |      |      |      |      |      |                              |      |      |      |      |      |        |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |    `   |  1   |  2   |  3   |  4   |  5   |                              |   6  |  7   |  8   |  9   |  0   |   =    |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |    ~   |  !   |  @   |  #   |  $   |  %   |                              |   ^  |  &   |  *   |  (   |  )   |   +    |
@@ -195,8 +180,6 @@ In case you wish to combine <kbd>Shift</kbd> with a symbol key anyways, you can 
 Function Layer: Function keys
                                                                                                                          
 ,-------------------------------------------.                              ,-------------------------------------------.
-|        |      |      |      |      |      |                              |      |      |      |      |      |        |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |        |  F9  | F10  | F11  | F12  |      |                              |      |      |      |      |      |        |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |        |  F5  |  F6  |  F7  |  F8  |      |                              |      | Shift| Ctrl |  Alt |  GUI |        |
@@ -219,8 +202,6 @@ Since there are more than 10 function keys, the cluster of F-keys does not follo
 Adjust Layer: Default layer settings, RGB
                                                                                                                          
 ,-------------------------------------------.                              ,-------------------------------------------.
-|        |      |      |      |      |      |                              |      |      |      |      |      |        |
-|--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |        |      |      |QWERTY|      |      |                              |      |      |      |      |      |        |
 |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 |        |      |      |Dvorak|      |      |                              | TOG  | SAI  | HUI  | VAI  | MOD  |        |
@@ -252,11 +233,11 @@ or re-define the `QWERTY`, `COLEMAK` and `DVORAK` keys to point to custom keycod
 
 ## Hardware Features
 
-### Rotary Encoder
-The left rotary encoder is programmed to control the volume whereas the right encoder sends <kbd>PgUp</kbd> or <kbd>PgDn</kbd> on every turn.
+### RGB Matrix
+The Halcyon Kyria Rev4 features per-key RGB lighting using RGB Matrix (WS2812 LEDs). RGB Matrix is enabled by default and can be controlled with standard QMK RGB keycodes.
 
 ## Going further…
 
-This default keymap can be used as is, unchanged, as a daily driver for your Elora but you're invited to treat your keymap like a bonsai. At the beginning, it's just like the default keymap but from time to time, you can tweak it a little. Cut a little key here, let another combo grow there. Slowly but surely it will be a unique keymap that will fit you like a glove.
+This default keymap can be used as is, unchanged, as a daily driver for your Kyria but you're invited to treat your keymap like a bonsai. At the beginning, it's just like the default keymap but from time to time, you can tweak it a little. Cut a little key here, let another combo grow there. Slowly but surely it will be a unique keymap that will fit you like a glove.
 
 Check out the #keymap-ideas channel on the official SplitKB Discord server for inspiration.
