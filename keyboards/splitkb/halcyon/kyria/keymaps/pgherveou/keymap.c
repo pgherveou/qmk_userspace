@@ -52,11 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------'                                              `-----------------------------------'
  */
   [_QWERTY] = LAYOUT_split_3x6_5_hlc(
-     CTL_S_TILT, KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   ,                                        KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , KC_EQL ,
-     CTL_TAB   , KC_A   , KC_S   , KC_D   , KC_F   , KC_G   ,                                        KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, QUOT_CMD,
-     KC_HYPR   , KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_LBRC, KC_MEH ,    FKEYS  , KC_RBRC, KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, KC_BSLS,
-                                    KC_NO  , KC_LALT, SFT_COL, SPC_NAV, GUI_DEL,    GUI_BSP, ENT_SYM, SFT_MIN, KC_RGUI, KC_NO  ,
-     KC_MUTE   , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                                                                   KC_MUTE, KC_NO  , KC_NO  , KC_NO  , KC_NO
+     CTL_S_TILT, KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   ,                                            KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , KC_EQL ,
+     CTL_TAB   , KC_A   , KC_S   , KC_D   , KC_F   , KC_G   ,                                            KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, QUOT_CMD,
+     KC_HYPR   , KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_LBRC, KC_MEH ,        FKEYS  , KC_RBRC, KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, KC_BSLS,
+                                    KC_NO  , KC_LALT, SFT_COL, SPC_NAV, GUI_DEL,        GUI_BSP, ENT_SYM, SFT_MIN, KC_RGUI, KC_NO  ,
+     KC_MUTE   , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                                                                       KC_MUTE, KC_NO  , KC_NO  , KC_NO  , KC_NO
     ),
 /* ┌──────┬──────┬──────┬──────┬──────┬──────┐                              ┌──────┬──────┬──────┬──────┬──────┬──────┐
  * │      │      │WORD_R│      │S(UNDO│      │                              │ HOME │ END  │ PGUP │NAV_O │PASTE │SCREEN│
@@ -73,11 +73,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------'                                              `-----------------------------------'
  */
   [_NAV] = LAYOUT_split_3x6_5_hlc(
-     XXXXXXX   , XXXXXXX , WORD_RIGHT, XXXXXXX, S(UNDO), XXXXXXX  ,                                        KC_HOME    , KC_END , KC_PGUP      , NAV_O  , PASTE  , SCREENSHOT,
-     SELECT_ALL, KC_LCTL , KC_LGUI   , KC_LALT, KC_LSFT, XXXXXXX  ,                                        KC_LEFT    , KC_DOWN, KC_UP        , KC_RGHT, XXXXXXX, XXXXXXX   ,
-     C(KC_B)   , UNDO    , CUT       , COPY   , NAV_V  , WORD_LEFT, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX    , KC_PGDN, XXXXXXX      , XXXXXXX, XXXXXXX, XXXXXXX   ,
-                                        KC_TRNS, XXXXXXX, XXXXXXX  , XXXXXXX, XXXXXXX,    S(WORD_LEFT), NAV_CAPS, S(WORD_RIGHT), _______, KC_TRNS,
-     KC_NO     , KC_NO   , KC_NO     , KC_NO  , KC_NO  ,                                                                   KC_NO  , KC_NO  , KC_NO        , KC_NO  , KC_NO
+     XXXXXXX   , XXXXXXX , WORD_RIGHT, XXXXXXX, S(UNDO), XXXXXXX  ,                                            KC_HOME    , KC_END , KC_PGUP      , NAV_O  , PASTE  , SCREENSHOT,
+     SELECT_ALL, KC_LCTL , KC_LGUI   , KC_LALT, KC_LSFT, XXXXXXX  ,                                            KC_LEFT    , KC_DOWN, KC_UP        , KC_RGHT, XXXXXXX, XXXXXXX   ,
+     C(KC_B)   , UNDO    , CUT       , COPY   , NAV_V  , WORD_LEFT, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX    , KC_PGDN, XXXXXXX      , XXXXXXX, XXXXXXX, XXXXXXX   ,
+                                        KC_TRNS, XXXXXXX, XXXXXXX  , XXXXXXX, XXXXXXX,        S(WORD_LEFT), NAV_CAPS, S(WORD_RIGHT), _______, KC_TRNS,
+     KC_NO     , KC_NO   , KC_NO     , KC_NO  , KC_NO  ,                                                                           KC_NO  , KC_NO  , KC_NO        , KC_NO  , KC_NO
     ),
 /* ┌──────┬──────┬──────┬──────┬──────┬──────┐                              ┌──────┬──────┬──────┬──────┬──────┬──────┐
  * │ ` ~  │  1   │  2   │  3   │  4   │  5   │                              │  6   │  7   │  8   │  9   │TERM_P│  +   │
@@ -94,11 +94,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------'                                              `-----------------------------------'
  */
   [_SYM] = LAYOUT_split_3x6_5_hlc(
-     KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,                                        KC_6   , KC_7    , KC_8    , KC_9   , TERM_PASTE, KC_PLUS,
-     KC_TILD, KC_EXLM, KC_AT  , KC_HASH, KC_DLR , KC_PERC,                                        KC_CIRC, GUI_AMPR, SFT_ASTR, KC_LPRN, KC_RPRN   , KC_RIGHT,
-     KC_PIPE, KC_BSLS, KC_LBRC, KC_LCBR, KC_LPRN, KC_EQL , KC_LT  , XXXXXXX,    XXXXXXX, KC_GT  , KC_PLUS, KC_RPRN , KC_RCBR , KC_RBRC, KC_SLSH   , KC_QUES,
-                                 KC_TRNS, _______, KC_DOT , KC_0   , KC_COMM,    _______, XXXXXXX, XXXXXXX , XXXXXXX, KC_TRNS,
-     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                                                                   KC_NO  , KC_NO   , KC_NO   , KC_NO  , KC_NO
+     KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,                                            KC_6   , KC_7    , KC_8    , KC_9   , TERM_PASTE, KC_PLUS,
+     KC_TILD, KC_EXLM, KC_AT  , KC_HASH, KC_DLR , KC_PERC,                                            KC_CIRC, GUI_AMPR, SFT_ASTR, KC_LPRN, KC_RPRN   , KC_RIGHT,
+     KC_PIPE, KC_BSLS, KC_LBRC, KC_LCBR, KC_LPRN, KC_EQL , KC_LT  , XXXXXXX,        XXXXXXX, KC_GT  , KC_PLUS, KC_RPRN , KC_RCBR , KC_RBRC, KC_SLSH   , KC_QUES,
+                                 KC_TRNS, _______, KC_DOT , KC_0   , KC_COMM,        _______, XXXXXXX, XXXXXXX , XXXXXXX, KC_TRNS,
+     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                                                                       KC_NO  , KC_NO   , KC_NO   , KC_NO  , KC_NO
     ),
 /* ┌──────┬──────┬──────┬──────┬──────┬──────┐                              ┌──────┬──────┬──────┬──────┬──────┬──────┐
  * │G(KC_0│G(KC_1│G(KC_2│G(KC_3│G(KC_4│G(KC_5│                              │G(KC_6│G(KC_7│G(KC_8│G(KC_9│      │      │
@@ -115,11 +115,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------'                                              `-----------------------------------'
  */
   [_CMD] = LAYOUT_split_3x6_5_hlc(
-     G(KC_0), G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                        G(KC_6), G(KC_7), G(KC_8), G(KC_9), _______, _______,
-     _______, _______, _______, _______, _______, _______,                                        _______, _______, _______, _______, KC_RSFT, _______,
-     _______, _______, _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______, _______, _______,
-                                 _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______,
-     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                                                                   KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
+     G(KC_0), G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                            G(KC_6), G(KC_7), G(KC_8), G(KC_9), _______, _______,
+     _______, _______, _______, _______, _______, _______,                                            _______, _______, _______, _______, KC_RSFT, _______,
+     _______, _______, _______, _______, _______, _______, _______, _______,        _______, _______, _______, _______, _______, _______, _______, _______,
+                                 _______, _______, _______, _______, _______,        _______, _______, _______, _______, _______,
+     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                                                                       KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
     ),
 /* ┌──────┬──────┬──────┬──────┬──────┬──────┐                              ┌──────┬──────┬──────┬──────┬──────┬──────┐
  * │      │SECRET│SECRET│SECRET│      │      │                              │      │      │      │      │      │      │
@@ -136,11 +136,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------'                                              `-----------------------------------'
  */
   [_FUNCTION] = LAYOUT_split_3x6_5_hlc(
-     XXXXXXX   , KC_SECRET_1, KC_SECRET_2, KC_SECRET_3, XXXXXXX, XXXXXXX,                                        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-     G(C(KC_Q)), KC_F1      , KC_F2      , KC_F3      , KC_F4  , KC_F5  ,                                        XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
-     XXXXXXX   , KC_F6      , KC_F7      , KC_F8      , KC_F9  , KC_F10 , KC_F11 , KC_F12 ,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                                            KC_TRNS    , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_TRNS,
-     KC_NO     , KC_NO      , KC_NO      , KC_NO      , KC_NO  ,                                                                   KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
+     XXXXXXX   , KC_SECRET_1, KC_SECRET_2, KC_SECRET_3, XXXXXXX, XXXXXXX,                                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     G(C(KC_Q)), KC_F1      , KC_F2      , KC_F3      , KC_F4  , KC_F5  ,                                            XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
+     XXXXXXX   , KC_F6      , KC_F7      , KC_F8      , KC_F9  , KC_F10 , KC_F11 , KC_F12 ,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+                                            KC_TRNS    , XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_TRNS,
+     KC_NO     , KC_NO      , KC_NO      , KC_NO      , KC_NO  ,                                                                      KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
     ),
 };
 
