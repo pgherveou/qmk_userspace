@@ -304,10 +304,11 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
                 tap_code16(KC_ESC);
             }
             break;
-        // df -> ctrl+c
+        // df -> ctrl+b l (tmux last window)
         case COMBO_DF:
             if (pressed) {
-                tap_code16(C(KC_C));
+                tap_code16(C(KC_B));
+                tap_code16(KC_L);
             }
             break;
         // cv -> ctrl+b z
