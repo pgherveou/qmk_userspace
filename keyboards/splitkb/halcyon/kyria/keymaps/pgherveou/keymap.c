@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
   [_NAV] = LAYOUT_split_3x6_5_hlc(
      XXXXXXX   , XXXXXXX , WORD_RIGHT, XXXXXXX, S(UNDO), XXXXXXX  ,                                            KC_HOME    , KC_END , KC_PGUP      , NAV_O  , PASTE  , SCREENSHOT,
-     SELECT_ALL, KC_LCTL , KC_LGUI   , KC_LALT, KC_LSFT, XXXXXXX  ,                                            KC_LEFT    , KC_DOWN, KC_UP        , KC_RGHT, XXXXXXX, XXXXXXX   ,
+     KC_LCTL   , KC_LCTL , KC_LGUI   , KC_LALT, KC_LSFT, XXXXXXX  ,                                            KC_LEFT    , KC_DOWN, KC_UP        , KC_RGHT, XXXXXXX, XXXXXXX   ,
      C(KC_B)   , UNDO    , CUT       , COPY   , NAV_V  , WORD_LEFT, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX    , KC_PGDN, XXXXXXX      , XXXXXXX, XXXXXXX, XXXXXXX   ,
                                         KC_TRNS, XXXXXXX, XXXXXXX  , XXXXXXX, XXXXXXX,        S(WORD_LEFT), NAV_CAPS, S(WORD_RIGHT), _______, KC_TRNS,
      KC_NO     , KC_NO   , KC_NO     , KC_NO  , KC_NO  ,                                                                           KC_NO  , KC_NO  , KC_NO        , KC_NO  , KC_NO
